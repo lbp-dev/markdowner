@@ -1,6 +1,6 @@
 # Markdowner
 
-Enable Markdown files in your `app/views/`
+Enable Markdown files in your `app/views/` directory.
 
 ## Usage
 
