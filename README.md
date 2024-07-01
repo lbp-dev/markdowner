@@ -1,16 +1,21 @@
 # Markdowner
 
-Simple rails gem to use Markdown files in your views.
+Enable Markdown files in your `app/views/`
 
 ## Usage
 
-After installing the gem you can create and use markdown files in your view folders. The markdown files are rendered as html using the redcarpet gem.
+After installing the gem you can create and use markdown files in your view folders.
+
+- Markdown files are rendered as HTML using the [redcarpet](https://github.com/vmg/redcarpet) gem.
 
 ### Syntax Highlighting
 
-Markdowner comes with the [prismjs](https://prismjs.com/) library for syntax highlighting. You're free to use any other library you like, just skip this section and include your own.
+- Markdowner allows you to opt in to the [prismjs](https://prismjs.com/) library for syntax highlighting.
 
-- To enable it add the following to your layout.
+  - You're free to use any other library instead, just skip this section and use your preferred
+    syntax highlighter.
+
+  - To enable it add the following to your layout.
 
 ```language-erb
  <%= stylesheet_link_tag 'markdowner/prism', media: 'all' %>
