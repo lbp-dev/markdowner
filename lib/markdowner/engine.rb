@@ -10,12 +10,5 @@ module Markdowner
         Markdowner::Handlers::MarkdownHandler.new
       )
     end
-
-    initializer "markdowner.assets.precompile" do |app|
-      app.config.assets.precompile += %w[markdowner/prism.js markdowner/prism.css]
-    end
-
-    # Add the vendor directory to the load path
-    config.autoload_paths += %W[#{config.root}/vendor]
   end
 end
